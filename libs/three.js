@@ -69,7 +69,7 @@
 
 				if ( target === undefined || target === null ) {
 
-					throw new TypeError( 'Cannot convert undefined or null to object' );
+					throw new TypeError( 'Cannot convert undefined or null to object Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 				}
 
@@ -3475,7 +3475,7 @@
 
 			if ( ! ( euler && euler.isEuler ) ) {
 
-				console.error( 'THREE.Matrix4: .makeRotationFromEuler() now expects a Euler rotation rather than a Vector3 and order.' );
+				console.error( 'THREE.Matrix4: .makeRotationFromEuler() now expects a Euler rotation rather than a Vector3 and order. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 			}
 
@@ -3695,7 +3695,7 @@
 
 			if ( n !== undefined ) {
 
-				console.warn( 'THREE.Matrix4: .multiply() now only accepts one argument. Use .multiplyMatrices( a, b ) instead.' );
+				console.warn( 'THREE.Matrix4: .multiply() now only accepts one argument. Use .multiplyMatrices( a, b ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 				return this.multiplyMatrices( m, n );
 
 			}
@@ -3886,7 +3886,7 @@
 
 			if ( det === 0 ) {
 
-				var msg = "THREE.Matrix4: .getInverse() can't invert matrix, determinant is 0";
+				var msg = "THREE.Matrix4: .getInverse() can't invert matrix, determinant is 0. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM";
 
 				if ( throwOnDegenerate === true ) {
 
@@ -4139,7 +4139,7 @@
 
 			if ( far === undefined ) {
 
-				console.warn( 'THREE.Matrix4: .makePerspective() has been redefined and has a new signature. Please check the docs.' );
+				console.warn( 'THREE.Matrix4: .makePerspective() has been redefined and has a new signature. Please check the docs. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 			}
 
@@ -10482,7 +10482,7 @@
 
 			if ( object === this ) {
 
-				console.error( "THREE.Object3D.add: object can't be added as a child of itself.", object );
+				console.error( "THREE.Object3D.add: object can't be added as a child of itself. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM", object );
 				return this;
 
 			}
@@ -10502,7 +10502,7 @@
 
 			} else {
 
-				console.error( "THREE.Object3D.add: object not an instance of THREE.Object3D.", object );
+				console.error( "THREE.Object3D.add: object not an instance of THREE.Object3D. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM", object );
 
 			}
 
@@ -12206,7 +12206,7 @@
 
 			if ( ! ( mesh && mesh.isMesh ) ) {
 
-				console.error( 'THREE.Geometry.mergeMesh(): mesh not an instance of THREE.Mesh.', mesh );
+				console.error( 'THREE.Geometry.mergeMesh(): mesh not an instance of THREE.Mesh. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM', mesh );
 				return;
 
 			}
@@ -12865,7 +12865,7 @@
 
 			if ( Array.isArray( array ) ) {
 
-				throw new TypeError( 'THREE.BufferAttribute: array should be a Typed Array.' );
+				throw new TypeError( 'THREE.BufferAttribute: array should be a Typed Array. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 			}
 
@@ -42367,7 +42367,7 @@
 
 	function Face4( a, b, c, d, normal, color, materialIndex ) {
 
-		console.warn( 'THREE.Face4 has been removed. A THREE.Face3 will be created instead.' );
+		console.warn( 'THREE.Face4 has been removed. A THREE.Face3 will be created instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Face3( a, b, c, normal, color, materialIndex );
 
 	}
@@ -42387,7 +42387,7 @@
 
 		if ( materials === undefined ) materials = [];
 
-		console.warn( 'THREE.MultiMaterial has been removed. Use an Array instead.' );
+		console.warn( 'THREE.MultiMaterial has been removed. Use an Array instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		materials.isMultiMaterial = true;
 		materials.materials = materials;
 		materials.clone = function () {
@@ -42401,7 +42401,7 @@
 
 	function PointCloud( geometry, material ) {
 
-		console.warn( 'THREE.PointCloud has been renamed to THREE.Points.' );
+		console.warn( 'THREE.PointCloud has been renamed to THREE.Points. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Points( geometry, material );
 
 	}
@@ -42415,14 +42415,14 @@
 
 	function ParticleSystem( geometry, material ) {
 
-		console.warn( 'THREE.ParticleSystem has been renamed to THREE.Points.' );
+		console.warn( 'THREE.ParticleSystem has been renamed to THREE.Points. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Points( geometry, material );
 
 	}
 
 	function PointCloudMaterial( parameters ) {
 
-		console.warn( 'THREE.PointCloudMaterial has been renamed to THREE.PointsMaterial.' );
+		console.warn( 'THREE.PointCloudMaterial has been renamed to THREE.PointsMaterial. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new PointsMaterial( parameters );
 
 	}
@@ -42436,7 +42436,7 @@
 
 	function ParticleSystemMaterial( parameters ) {
 
-		console.warn( 'THREE.ParticleSystemMaterial has been renamed to THREE.PointsMaterial.' );
+		console.warn( 'THREE.ParticleSystemMaterial has been renamed to THREE.PointsMaterial. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new PointsMaterial( parameters );
 
 	}
@@ -42452,7 +42452,7 @@
 
 	function DynamicBufferAttribute( array, itemSize ) {
 
-		console.warn( 'THREE.DynamicBufferAttribute has been removed. Use new THREE.BufferAttribute().setDynamic( true ) instead.' );
+		console.warn( 'THREE.DynamicBufferAttribute has been removed. Use new THREE.BufferAttribute().setDynamic( true ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new BufferAttribute( array, itemSize ).setDynamic( true );
 
 	}
@@ -42466,14 +42466,14 @@
 
 	function Uint8Attribute( array, itemSize ) {
 
-		console.warn( 'THREE.Uint8Attribute has been removed. Use new THREE.Uint8BufferAttribute() instead.' );
+		console.warn( 'THREE.Uint8Attribute has been removed. Use new THREE.Uint8BufferAttribute() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Uint8BufferAttribute( array, itemSize );
 
 	}
 
 	function Uint8ClampedAttribute( array, itemSize ) {
 
-		console.warn( 'THREE.Uint8ClampedAttribute has been removed. Use new THREE.Uint8ClampedBufferAttribute() instead.' );
+		console.warn( 'THREE.Uint8ClampedAttribute has been removed. Use new THREE.Uint8ClampedBufferAttribute() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Uint8ClampedBufferAttribute( array, itemSize );
 
 	}
@@ -42487,7 +42487,7 @@
 
 	function Uint16Attribute( array, itemSize ) {
 
-		console.warn( 'THREE.Uint16Attribute has been removed. Use new THREE.Uint16BufferAttribute() instead.' );
+		console.warn( 'THREE.Uint16Attribute has been removed. Use new THREE.Uint16BufferAttribute() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Uint16BufferAttribute( array, itemSize );
 
 	}
@@ -42501,21 +42501,21 @@
 
 	function Uint32Attribute( array, itemSize ) {
 
-		console.warn( 'THREE.Uint32Attribute has been removed. Use new THREE.Uint32BufferAttribute() instead.' );
+		console.warn( 'THREE.Uint32Attribute has been removed. Use new THREE.Uint32BufferAttribute() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Uint32BufferAttribute( array, itemSize );
 
 	}
 
 	function Float32Attribute( array, itemSize ) {
 
-		console.warn( 'THREE.Float32Attribute has been removed. Use new THREE.Float32BufferAttribute() instead.' );
+		console.warn( 'THREE.Float32Attribute has been removed. Use new THREE.Float32BufferAttribute() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Float32BufferAttribute( array, itemSize );
 
 	}
 
 	function Float64Attribute( array, itemSize ) {
 
-		console.warn( 'THREE.Float64Attribute has been removed. Use new THREE.Float64BufferAttribute() instead.' );
+		console.warn( 'THREE.Float64Attribute has been removed. Use new THREE.Float64BufferAttribute() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new Float64BufferAttribute( array, itemSize );
 
 	}
@@ -42538,7 +42538,7 @@
 
 	function ClosedSplineCurve3( points ) {
 
-		console.warn( 'THREE.ClosedSplineCurve3 has been deprecated. Use THREE.CatmullRomCurve3 instead.' );
+		console.warn( 'THREE.ClosedSplineCurve3 has been deprecated. Use THREE.CatmullRomCurve3 instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 		CatmullRomCurve3.call( this, points );
 		this.type = 'catmullrom';
@@ -42552,7 +42552,7 @@
 
 	function SplineCurve3( points ) {
 
-		console.warn( 'THREE.SplineCurve3 has been deprecated. Use THREE.CatmullRomCurve3 instead.' );
+		console.warn( 'THREE.SplineCurve3 has been deprecated. Use THREE.CatmullRomCurve3 instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 		CatmullRomCurve3.call( this, points );
 		this.type = 'catmullrom';
@@ -42565,7 +42565,7 @@
 
 	function Spline( points ) {
 
-		console.warn( 'THREE.Spline has been removed. Use THREE.CatmullRomCurve3 instead.' );
+		console.warn( 'THREE.Spline has been removed. Use THREE.CatmullRomCurve3 instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 		CatmullRomCurve3.call( this, points );
 		this.type = 'catmullrom';
@@ -42597,7 +42597,7 @@
 	//
 	function BoundingBoxHelper( object, color ) {
 
-		console.warn( 'THREE.BoundingBoxHelper has been deprecated. Creating a THREE.BoxHelper instead.' );
+		console.warn( 'THREE.BoundingBoxHelper has been deprecated. Creating a THREE.BoxHelper instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new BoxHelper( object, color );
 
 	}
@@ -42617,7 +42617,7 @@
 
 	SkeletonHelper.prototype.update = function () {
 
-		console.error( 'THREE.SkeletonHelper: update() no longer needs to be called.' );
+		console.error( 'THREE.SkeletonHelper: update() no longer needs to be called. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 	};
 
@@ -42632,14 +42632,14 @@
 
 	function XHRLoader( manager ) {
 
-		console.warn( 'THREE.XHRLoader has been renamed to THREE.FileLoader.' );
+		console.warn( 'THREE.XHRLoader has been renamed to THREE.FileLoader. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new FileLoader( manager );
 
 	}
 
 	function BinaryTextureLoader( manager ) {
 
-		console.warn( 'THREE.BinaryTextureLoader has been renamed to THREE.DataTextureLoader.' );
+		console.warn( 'THREE.BinaryTextureLoader has been renamed to THREE.DataTextureLoader. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return new DataTextureLoader( manager );
 
 	}
@@ -42656,13 +42656,13 @@
 		},
 		empty: function () {
 
-			console.warn( 'THREE.Box2: .empty() has been renamed to .isEmpty().' );
+			console.warn( 'THREE.Box2: .empty() has been renamed to .isEmpty(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.isEmpty();
 
 		},
 		isIntersectionBox: function ( box ) {
 
-			console.warn( 'THREE.Box2: .isIntersectionBox() has been renamed to .intersectsBox().' );
+			console.warn( 'THREE.Box2: .isIntersectionBox() has been renamed to .intersectsBox(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.intersectsBox( box );
 
 		},
@@ -42678,7 +42678,7 @@
 
 		center: function ( optionalTarget ) {
 
-			console.warn( 'THREE.Box3: .center() has been renamed to .getCenter().' );
+			console.warn( 'THREE.Box3: .center() has been renamed to .getCenter(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.getCenter( optionalTarget );
 
 		},
@@ -42690,7 +42690,7 @@
 		},
 		isIntersectionBox: function ( box ) {
 
-			console.warn( 'THREE.Box3: .isIntersectionBox() has been renamed to .intersectsBox().' );
+			console.warn( 'THREE.Box3: .isIntersectionBox() has been renamed to .intersectsBox(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.intersectsBox( box );
 
 		},
@@ -42702,7 +42702,7 @@
 		},
 		size: function ( optionalTarget ) {
 
-			console.warn( 'THREE.Box3: .size() has been renamed to .getSize().' );
+			console.warn( 'THREE.Box3: .size() has been renamed to .getSize(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.getSize( optionalTarget );
 
 		}
@@ -42717,7 +42717,7 @@
 
 	_Math.random16 = function () {
 
-		console.warn( 'THREE.Math.random16() has been deprecated. Use Math.random() instead.' );
+		console.warn( 'THREE.Math.random16() has been deprecated. Use Math.random() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return Math.random();
 
 	};
@@ -42732,7 +42732,7 @@
 		},
 		multiplyVector3: function ( vector ) {
 
-			console.warn( 'THREE.Matrix3: .multiplyVector3() has been removed. Use vector.applyMatrix3( matrix ) instead.' );
+			console.warn( 'THREE.Matrix3: .multiplyVector3() has been removed. Use vector.applyMatrix3( matrix ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return vector.applyMatrix3( this );
 
 		},
@@ -42743,7 +42743,7 @@
 		},
 		applyToBuffer: function( buffer, offset, length ) {
 
-			console.warn( 'THREE.Matrix3: .applyToBuffer() has been removed. Use matrix.applyToBufferAttribute( attribute ) instead.' );
+			console.warn( 'THREE.Matrix3: .applyToBuffer() has been removed. Use matrix.applyToBufferAttribute( attribute ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.applyToBufferAttribute( buffer );
 
 		},
@@ -42759,13 +42759,13 @@
 
 		extractPosition: function ( m ) {
 
-			console.warn( 'THREE.Matrix4: .extractPosition() has been renamed to .copyPosition().' );
+			console.warn( 'THREE.Matrix4: .extractPosition() has been renamed to .copyPosition(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.copyPosition( m );
 
 		},
 		flattenToArrayOffset: function ( array, offset ) {
 
-			console.warn( "THREE.Matrix4: .flattenToArrayOffset() has been deprecated. Use .toArray() instead." );
+			console.warn( "THREE.Matrix4: .flattenToArrayOffset() has been deprecated. Use .toArray() instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM" );
 			return this.toArray( array, offset );
 
 		},
@@ -42784,7 +42784,7 @@
 		}(),
 		setRotationFromQuaternion: function ( q ) {
 
-			console.warn( 'THREE.Matrix4: .setRotationFromQuaternion() has been renamed to .makeRotationFromQuaternion().' );
+			console.warn( 'THREE.Matrix4: .setRotationFromQuaternion() has been renamed to .makeRotationFromQuaternion(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.makeRotationFromQuaternion( q );
 
 		},
@@ -42795,7 +42795,7 @@
 		},
 		multiplyVector3: function ( vector ) {
 
-			console.warn( 'THREE.Matrix4: .multiplyVector3() has been removed. Use vector.applyMatrix4( matrix ) instead.' );
+			console.warn( 'THREE.Matrix4: .multiplyVector3() has been removed. Use vector.applyMatrix4( matrix ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return vector.applyMatrix4( this );
 
 		},
@@ -42812,7 +42812,7 @@
 		},
 		rotateAxis: function ( v ) {
 
-			console.warn( 'THREE.Matrix4: .rotateAxis() has been removed. Use Vector3.transformDirection( matrix ) instead.' );
+			console.warn( 'THREE.Matrix4: .rotateAxis() has been removed. Use Vector3.transformDirection( matrix ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			v.transformDirection( this );
 
 		},
@@ -42824,7 +42824,7 @@
 		},
 		translate: function () {
 
-			console.error( 'THREE.Matrix4: .translate() has been removed.' );
+			console.error( 'THREE.Matrix4: .translate() has been removed. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 		},
 		rotateX: function () {
@@ -42849,7 +42849,7 @@
 		},
 		applyToBuffer: function( buffer, offset, length ) {
 
-			console.warn( 'THREE.Matrix4: .applyToBuffer() has been removed. Use matrix.applyToBufferAttribute( attribute ) instead.' );
+			console.warn( 'THREE.Matrix4: .applyToBuffer() has been removed. Use matrix.applyToBufferAttribute( attribute ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.applyToBufferAttribute( buffer );
 
 		},
@@ -42869,7 +42869,7 @@
 
 	Plane.prototype.isIntersectionLine = function ( line ) {
 
-		console.warn( 'THREE.Plane: .isIntersectionLine() has been renamed to .intersectsLine().' );
+		console.warn( 'THREE.Plane: .isIntersectionLine() has been renamed to .intersectsLine(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 		return this.intersectsLine( line );
 
 	};
@@ -42891,7 +42891,7 @@
 		},
 		isIntersectionPlane: function ( plane ) {
 
-			console.warn( 'THREE.Ray: .isIntersectionPlane() has been renamed to .intersectsPlane().' );
+			console.warn( 'THREE.Ray: .isIntersectionPlane() has been renamed to .intersectsPlane(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.intersectsPlane( plane );
 
 		},
@@ -42958,7 +42958,7 @@
 		},
 		getColumnFromMatrix: function ( index, matrix ) {
 
-			console.warn( 'THREE.Vector3: .getColumnFromMatrix() has been renamed to .setFromMatrixColumn().' );
+			console.warn( 'THREE.Vector3: .getColumnFromMatrix() has been renamed to .setFromMatrixColumn(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.setFromMatrixColumn( matrix, index );
 
 		},
@@ -42981,7 +42981,7 @@
 
 		fromAttribute: function ( attribute, index, offset ) {
 
-			console.error( 'THREE.Vector4: .fromAttribute() has been renamed to .fromBufferAttribute().' );
+			console.error( 'THREE.Vector4: .fromAttribute() has been renamed to .fromBufferAttribute(). Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.fromBufferAttribute( attribute, index, offset );
 
 		}
@@ -42992,7 +42992,7 @@
 
 	Geometry.prototype.computeTangents = function () {
 
-		console.warn( 'THREE.Geometry: .computeTangents() has been removed.' );
+		console.warn( 'THREE.Geometry: .computeTangents() has been removed. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 	};
 
@@ -43006,12 +43006,12 @@
 		},
 		renderDepth: function () {
 
-			console.warn( 'THREE.Object3D: .renderDepth has been removed. Use .renderOrder, instead.' );
+			console.warn( 'THREE.Object3D: .renderDepth has been removed. Use .renderOrder, instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 		},
 		translate: function ( distance, axis ) {
 
-			console.warn( 'THREE.Object3D: .translate() has been removed. Use .translateOnAxis( axis, distance ) instead.' );
+			console.warn( 'THREE.Object3D: .translate() has been removed. Use .translateOnAxis( axis, distance ) instead. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.translateOnAxis( axis, distance );
 
 		}
@@ -43037,7 +43037,7 @@
 		useQuaternion: {
 			get: function () {
 
-				console.warn( 'THREE.Object3D: .useQuaternion has been removed. The library now uses quaternions by default.' );
+				console.warn( 'THREE.Object3D: .useQuaternion has been removed. The library now uses quaternions by default. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 			},
 			set: function () {
@@ -43054,7 +43054,7 @@
 		objects: {
 			get: function () {
 
-				console.warn( 'THREE.LOD: .objects has been renamed to .levels.' );
+				console.warn( 'THREE.LOD: .objects has been renamed to .levels. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 				return this.levels;
 
 			}
@@ -43071,7 +43071,7 @@
 		},
 		set: function () {
 
-			console.warn( 'THREE.Skeleton: useVertexTexture has been removed.' );
+			console.warn( 'THREE.Skeleton: useVertexTexture has been removed. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 
 		}
 
@@ -43081,13 +43081,13 @@
 
 		get: function () {
 
-			console.warn( 'THREE.Curve: .__arcLengthDivisions is now .arcLengthDivisions.' );
+			console.warn( 'THREE.Curve: .__arcLengthDivisions is now .arcLengthDivisions. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			return this.arcLengthDivisions;
 
 		},
 		set: function ( value ) {
 
-			console.warn( 'THREE.Curve: .__arcLengthDivisions is now .arcLengthDivisions.' );
+			console.warn( 'THREE.Curve: .__arcLengthDivisions is now .arcLengthDivisions. Tip: remember to join the discord server https://discord.gg/md9EVMDYcM' );
 			this.arcLengthDivisions = value;
 
 		}
